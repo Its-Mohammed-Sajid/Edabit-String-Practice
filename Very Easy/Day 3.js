@@ -70,3 +70,67 @@
 // console.log(arrayToString(["a", "b", "c", "d", "e", "f"])); // ➞ "abcdef"
 
 // console.log(arrayToString([1, 2, 3, "a", "s", "dAAAA"])); // ➞ "123asdAAAA"
+
+
+
+// // 20. Find the Index
+// // Create a function that takes an array and a string as arguments and returns the index of the string.
+
+// function findIndex(arr, val){
+//     // return arr.indexOf(val);
+    
+//     let result;
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] === val){
+//             result = i;
+//         }
+//     }
+
+//     return result
+// }
+
+// // Examples
+// console.log(findIndex(["hi", "edabit", "fgh", "abc"], "fgh")) // ➞ 2
+
+// console.log(findIndex(["Red", "blue", "Blue", "Green"], "blue")) // ➞ 1
+
+// console.log(findIndex(["a", "g", "y", "d"], "d")) // ➞ 3
+
+// console.log(findIndex(["Pineapple", "Orange", "Grape", "Apple"], "Pineapple")) // ➞ 0
+
+
+// 21. Word Numbers!
+// Create a function that returns a number, based on the string provided. Here is a list of all digits:
+
+// String	Number
+// "one"	1
+// "two"	2
+// "three"	3
+// "four"	4
+// "five"	5
+// "six"	6
+// "seven"	7
+// "eight"	8
+// "nine"	9
+// "zero"	0
+
+// Examples
+
+function word(val){
+    let arr = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "zero"];
+    let result;
+
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] === val){
+            result = i+1;
+        } 
+    }
+
+    return result
+}
+
+console.log(word("one")) // ➞ 1
+
+console.log(word("two")) // ➞ 2
+
+console.log(word("nine")) // ➞ 9

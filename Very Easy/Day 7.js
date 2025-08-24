@@ -76,3 +76,144 @@
 
 // console.log(ctoa("\\")); // ➞ 92
 
+
+
+
+// // 35. Case Insensitive Comparison
+// // Write a function that validates whether two strings are identical. Make it case insensitive.
+
+// function match(str1, str2){
+//     let forResult = str2.toLowerCase();
+    
+//     return str1 === forResult
+// }
+
+// // Examples
+// console.log(match("hello", "hELLo")) // ➞ true
+
+// console.log(match("motive", "emotive")) // ➞ false
+
+// console.log(match("venom", "VENOM")) // ➞ true
+
+// console.log(match("mask", "mAskinG")) // ➞ false
+
+
+
+
+// // 36. Repeat String
+// // Create a function that takes a string txt and a number n and returns the repeated string n number of times.
+
+// // If given argument txt is not a string, return Not A String !!
+
+// function repeatString(str, repeat){
+//     let result = [];
+
+//     for(let i = 0; i < repeat; i++){
+//         result.push(str)
+//     }
+
+//    if(typeof str === "string"){
+//     return result.join("");
+//    }else{
+//     return "Not A String !!";
+//    }
+// }
+
+// // Examples
+// console.log(repeatString("Mubashir", 2)) // ➞ "MubashirMubashir"
+
+// console.log(repeatString("Matt", 3)) // ➞ "MattMattMatt"
+
+// console.log(repeatString(1990, 7)) // ➞ "Not A String !!"
+
+
+
+// // 37. String or Integer?
+// // Create a function that checks if the argument is an integer or a string. Return "int" if it's an integer and "str" if it's a string.
+
+// function intOrString(value){
+    
+//     if(typeof value === "number"){
+//         return "int";
+//     }else if(typeof value === "string"){
+//         return "str";
+//     }
+// }
+
+// // Examples
+// console.log(intOrString(8)) // ➞ "int"
+
+// console.log(intOrString("Hello")) // ➞ "str"
+
+// console.log(intOrString(9843532)) // ➞ "int"
+
+
+
+
+// // 38. Hello; Hello World; World
+// // Write a function that takes an integer and:
+
+// // If the number is a multiple of 3, return "Hello".
+// // If the number is a multiple of 5, return "World".
+// // If the number is a multiple of both 3 and 5, return "Hello World".
+
+// function helloWorld(num){
+//     if(num % 3 === 0 && num % 5 !== 0){
+//         return "Hello";
+//     }else if(num % 5 === 0 && num % 3 !== 0){
+//         return "World";
+//     }else if(num % 3 === 0 && num % 5 === 0){
+//         return "Hello World"
+//     }
+// }
+
+// // Examples
+// console.log(helloWorld(3)) // ➞ "Hello"
+
+// console.log(helloWorld(5)) // ➞ "World"
+
+// console.log(helloWorld(15)) // ➞ "Hello World"
+
+
+
+
+
+// // 39. String to Integer and Vice Versa
+// // Write two functions:
+
+// // toInt() : A function to convert a string to an integer.
+// // toStr() : A function to convert an integer to a string.
+
+// function toInt(val){
+//     return Number(val);
+// }
+
+// function toStr(val){
+//     return String(val);
+// }
+
+// // Examples
+// console.log(toInt("77")) // ➞ 77
+
+// console.log(toInt("532")) // ➞ 532
+
+// console.log(toStr(77)) // ➞ "77"
+
+// console.log(toStr(532)) // ➞ "532"
+
+
+
+
+// 40. Burrrrrrrp
+// Create a function that returns the string "Burp" with the amount of "r's" determined by the input parameters of the function.
+
+function longBurp(num){
+    return "Bu" + "r".repeat(num) + "p";
+}
+
+// Examples
+console.log(longBurp(3)) // ➞ "Burrrp"
+
+console.log(longBurp(5)) // ➞ "Burrrrrp"
+
+console.log(longBurp(9)) // ➞ "Burrrrrrrrrp"

@@ -236,4 +236,26 @@
 
 
 
-50. 
+// 50. The Study of Wumbology
+// Create a function that flips M's to W's (all uppercase).
+
+function wumbo(str){
+    let forResult = str.split("");
+
+    for(let i = 0; i < forResult.length; i++){
+        if(forResult[i] == "M"){
+            forResult[i] = "W";
+        }
+    }
+
+    let result = forResult.join("");
+
+    return result
+}
+
+// Examples
+console.log(wumbo("I LOVE MAKING CHALLENGES")) // ➞ "I LOVE WAKING CHALLENGES"
+
+console.log(wumbo("MEET ME IN WARSAW")) // ➞ "WEET WE IN WARSAW"
+
+console.log(wumbo("WUMBOLOGY")) // ➞ "WUWBOLOGY"
